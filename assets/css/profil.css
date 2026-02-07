@@ -1,0 +1,386 @@
+/* ========================================
+   PROFIL TAB STYLES
+   ======================================== */
+
+/* Profile Header */
+.profile-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar-large {
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+    border: 4px solid rgba(255,255,255,0.3);
+}
+
+.profile-header h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: white;
+}
+
+.profile-header p {
+    margin: 5px 0;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.info-item {
+    background: var(--bg-card);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.info-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.info-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--btn-primary);
+}
+
+.info-unit {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-left: 2px;
+}
+
+/* BMI Card */
+.bmi-card {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-left: 4px solid var(--btn-primary);
+}
+
+.bmi-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--btn-primary);
+    margin: 10px 0;
+}
+
+.bmi-category {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.bmi-category.normal {
+    background: #d4edda;
+    color: #155724;
+}
+
+.bmi-category.overweight {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.bmi-category.obese {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.bmi-category.underweight {
+    background: #cce5ff;
+    color: #004085;
+}
+
+/* Target Card */
+.target-card {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.target-card h4 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.target-progress {
+    background: rgba(255,255,255,0.3);
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.target-fill {
+    height: 100%;
+    background: white;
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.target-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Edit Form */
+.edit-form {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px solid var(--border-color);
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-section h4 {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--btn-primary);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-save {
+    flex: 1;
+    background: var(--success);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-save:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background: #95a5a6;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-reset:hover {
+    background: #7f8c8d;
+}
+
+/* Activity Badges */
+.activity-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge.primary {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.badge.warning {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+/* Logout Section */
+.logout-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border-color);
+}
+
+.btn-logout {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--btn-danger);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-logout:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .target-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn-reset {
+        width: 100%;
+    }
+}
+
+/* Harris-Benedict Grid */
+.harris-benedict-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.hb-item {
+    background: var(--border-light);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.hb-item.highlight {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border: 2px solid var(--primary);
+}
+
+.hb-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hb-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hb-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 8px 0;
+    line-height: 1;
+}
+
+.hb-value span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-left: 4px;
+}
+
+.hb-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 6px;
+}
+
+@media (min-width: 600px) {
+    .harris-benedict-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

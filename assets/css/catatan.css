@@ -1,0 +1,345 @@
+/* ========================================
+   CATATAN TAB STYLES
+   ======================================== */
+
+/* Food Search */
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchMakanan {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 15px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: all 0.3s;
+}
+
+#searchMakanan:focus {
+    border-color: var(--btn-primary);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+#searchResults {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 350px;
+    overflow-y: auto;
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 100;
+}
+
+.search-result-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.result-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.result-info {
+    flex: 1;
+}
+
+.result-name {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.result-nutrition {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* Selected Food Card */
+#selectedMakanan {
+    display: none;
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 2px solid #4caf50;
+}
+
+.selected-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#makananImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.selected-title {
+    flex: 1;
+}
+
+.selected-title h4 {
+    margin: 0 0 8px 0;
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+#makananName {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+#makananInfo {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.portion-controls {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    margin-bottom: 15px;
+}
+
+.portion-controls > div {
+    flex: 1;
+}
+
+.portion-controls label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.portion-controls select,
+.portion-controls input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+}
+
+#totalNutrisi {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffc107;
+}
+
+#totalNutrisi strong {
+    color: #856404;
+}
+
+#totalInfo {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #856404;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-add {
+    flex: 1;
+    background: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-add:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #da190b;
+}
+
+/* Manual Input Form */
+.input-row {
+    margin-bottom: 15px;
+}
+
+.input-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.input-row input,
+.input-row select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+.unit {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-left: 5px;
+}
+
+/* Food Items List */
+.food-item {
+    background: var(--bg-card);
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.food-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.food-item strong {
+    color: var(--text-primary);
+    font-size: 15px;
+}
+
+.food-item small {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--btn-danger);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Weekly Progress */
+.weekly-stats {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.weekly-stats h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.weekly-stat-item {
+    margin: 15px 0;
+}
+
+.weekly-stat-item strong {
+    font-size: 16px;
+}
+
+.stat-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .portion-controls {
+        flex-direction: column;
+    }
+    
+    .selected-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
