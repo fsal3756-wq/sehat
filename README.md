@@ -315,12 +315,6 @@ Jika menemukan bug atau ingin request fitur:
 
 Project ini menggunakan lisensi [MIT License](LICENSE)
 
-## 📞 Kontak
-
-Untuk pertanyaan atau dukungan:
-- Email: support@hidupsehat.com
-- Website: www.hidupsehat.com
-
 ## 🙏 Acknowledgments
 
 - Data nutrisi dari USDA Food Database
